@@ -3,6 +3,8 @@ package main
 import (
 	grille "TPPUISSANCE4/Grille"
 	"TPPUISSANCE4/player"
+	"TPPUISSANCE4/tour"
+	"TPPUISSANCE4/variables"
 	"fmt"
 )
 
@@ -15,5 +17,7 @@ func main() {
 	fmt.Printf("\n\t\t %s est %s et %s est %s\n", player1.Name, player1.Type, player2.Name, player2.Type)
 
 	fmt.Println("\nVoici la grille de jeu :")
-	grille.GetGrille()
+	grille.GetGrille(variables.Thegrille)
+	fmt.Println("Le joueur 1 commence !")
+	tour.TourJoueur1()
 }
