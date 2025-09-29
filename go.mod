@@ -1,3 +1,3 @@
-module TPPUISSANCE4
+module example.com/TPPUISSANCE4
 
-go 1.25.0
+go 1.22
