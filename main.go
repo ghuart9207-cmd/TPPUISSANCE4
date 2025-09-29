@@ -24,7 +24,6 @@ func main() {
 		tour.PlayTurn(board, current)
 		fmt.Println(board)
 
-		// Vérifier si le jeu est terminé après le tour
 		gameOver, status := etat.IsGameOver(board, current.Symbole)
 		if gameOver {
 			if status == "win" {
@@ -35,7 +34,6 @@ func main() {
 			break
 		}
 
-		// alterner joueurs
 		if current.Symbole == grille.X {
 			current = joueurO
 		} else {
